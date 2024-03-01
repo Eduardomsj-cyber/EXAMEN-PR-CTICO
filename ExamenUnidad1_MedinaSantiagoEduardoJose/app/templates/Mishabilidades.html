@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}Eduardo Medina - Portafolio{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background: url('{{ url_for("static", filename="img.jpg") }}') no-repeat center center fixed;
+        background-size: cover;
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="min-height: 80px;">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='pp.jpg') }}" alt="" height="30">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Mishabilidades">Mis Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Misdatos">Mis Datos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/comentarios">comentarios</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<div class="container bg-dark text-white">
+    <h1>Bienvenido A</h1>
+    <h3>Mis Habilidades</h3>
+</div>
+</center>
+
+<div class="container text-center mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="skill-box">
+                <!-- Texto para Java -->
+                <p  class="container bg-dark text-white" >Java</p>
+                <!-- Imagen para Java -->
+                <div class="square">
+                    <img src="{{ url_for('static', filename='java.jpg') }}" alt="Java Image">
+                </div>
+                <div  class="container bg-dark text-white">
+                <p>Trabaje java desde que entre ala universidad entonces realize varios proyectos se demuestra mi habilidad en java por ejemplo un punto de venta y un sistema contable </p>
+                <p>Desde entonces me gusta porque no siempre uso lo basico si no exploro a profundidad su logica y funcionamiento para explotar potencial </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="skill-box">
+                <!-- Texto para Electrónica -->
+                <p  class="container bg-dark text-white" >Electrónica</p>
+                <!-- Imagen para Electrónica -->
+                <div class="square">
+                    <img src="{{ url_for('static', filename='electronica.jpg') }}" alt="Electrónica Image">
+                </div>
+                <div  class="container bg-dark text-white">
+                <p >Desde joven tuve mi acercamiento a la electronica hasta ahora tengo un certificado en reparacion de computadoras a nivel componente y sigo estudianto para poder capacitarme mas </p>
+                <p>En proyectos electronicos en equipo me doy a destacar por mi forma de resolver circuitos ademas de hacerlo mas facil y rapido con menos errores</p>
+               </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

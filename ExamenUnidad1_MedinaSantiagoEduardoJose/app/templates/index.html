@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}Eduardo Medina - Portafolio{% endblock %}
+
+{% block content %}
+
+    <style>
+        body {
+            background: url('{{ url_for("static", filename="xd.png") }}') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="min-height: 80px;">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="{{ url_for('static', filename='pp.jpg') }}" alt="" height="30">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Mishabilidades">Mis Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Misdatos">Mis Datos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/comentarios">comentarios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <div class="container bg-dark text-white">
+        <h1>Bienvenido </h1>
+        <h3>Eduardo  Medina  </h3>
+        <p>Ingeniería en Sistemas y Electrónica </p>
+    </div>
+   </center>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container text-center">
+        <p class="container bg-dark text-white">LEDS ROJOS</p>
+        <div class="led-container d-inline-block">
+            <div class="led"></div> 
+           
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="led-container d-inline-block">
+            <div class="led"></div> 
+           
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="led-container d-inline-block">
+            <div class="led"></div> 
+           
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container bg-dark text-white">
+        Hola soy eduardo estudiante de ingenieria me gusta la electronica y la informatica un poco de todo porfavor usa la barra de navegacion y ve mis publicaciones!! :)
+    </div>
+    <div class="text-center mt-4">
+        <img src="{{ url_for('static', filename='images.jpg') }}" class="img-fluid" style="margin: auto;">
+    </div>
+    
+
+    </div>
+    <br>
+    <br>
+    
+
+      </div>
+{% endblock %}

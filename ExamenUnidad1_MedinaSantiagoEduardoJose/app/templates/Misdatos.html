@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}Eduardo Medina - Portafolio{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background: url('{{ url_for("static", filename="wal1.jpg") }}') no-repeat center center fixed;
+        background-size: cover;
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="min-height: 80px;">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='pp.jpg') }}" alt="" height="30">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Mishabilidades">Mis Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Misdatos">Mis Datos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/comentarios">comentarios</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  
+
+<br>
+<div class="container text-center mt-4">
+    <div class="profile-box">
+        <!-- Imagen de perfil dentro de un círculo -->
+        <div class="profile-circle text-white">
+            <img src="{{ url_for('static', filename='me.jpeg') }}" alt="Tu Foto">
+        </div>
+        <!-- Texto del portafolio -->
+        <div class="portfolio-text">
+            <h1 class="text-white">Eduardo Jose Medina Santiago</h1>
+            <p class="text-white">Ingeniería en Sistemas y Electrónica</p>
+            <p class="text-white">
+                <i class="bi bi-rocket"></i>
+                Correo: eduardomsj1.gmail.com
+            </p>
+            <p class="text-white">
+                <i class="bi bi-rocket"></i>
+                Teléfono: 9995695295
+            </p>
+            <p class="text-white">
+                <i class="bi bi-rocket"></i>
+                udemy: Eduardo Medina 
+            </p>
+            <p class="text-white">
+                <i class="bi bi-rocket"></i>
+                Github: Eduardomsj-cyber
+            </p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
